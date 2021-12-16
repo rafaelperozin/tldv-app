@@ -1,0 +1,9 @@
+// CORE ----------------------------
+@import './core.scss';
+
+/** COMPONENTS ---------------------
+  * TODO: When you create a new component, you MUST import the scss file here.
+	* NOTE: Always add the style related to a component inside the component folder (src/component/<component-name>/_<component-name>.style.scss)
+  */
+@import '../components/Layouts/Header/_header.styles.scss';
+@import '../components/Layouts/Footer/_footer.style.scss';
