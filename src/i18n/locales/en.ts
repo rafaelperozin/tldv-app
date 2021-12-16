@@ -4,5 +4,6 @@ export const en = {
   },
   universities: {
     title: 'Universities Page',
+    pages: `Websites`,
   }
 };
