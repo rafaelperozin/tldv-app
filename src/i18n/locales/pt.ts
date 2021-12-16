@@ -5,5 +5,8 @@ export const pt = {
   universities: {
     title: 'Página de Universidades',
     pages: `Sites`,
+  },
+  notFound: {
+    title: '404 - Não Encontrada'
   }
 };

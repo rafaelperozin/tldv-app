@@ -4,9 +4,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Layouts/Header/Header';
 import { Footer } from './components/Layouts/Footer/Footer';
 
-import { HomePage } from './pages/Home.page';
-import { NotFoundPage } from './pages/NotFound.page';
-import { UniversitiesPage } from './pages/Universities.page';
+import { HomePage } from './pages/Home/Home.page';
+import { NotFoundPage } from './pages/NotFound/NotFound.page';
+import { UniversitiesPage } from './pages/Universities/Universities.page';
 
 export default function AppRoutes() {
 	return (

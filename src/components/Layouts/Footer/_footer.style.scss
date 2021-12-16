@@ -1,0 +1,23 @@
+.footer {
+  background-color: $black;
+  padding: 2rem 0 4rem;
+
+  @include tablet {
+    padding: 2rem 0 6.5rem;
+  }
+
+  .footer__container {
+    @include tablet {
+      @include flex(unset, space-between, center, nowrap);
+    }
+  }
+
+  .footer__share {
+    margin-top: 3rem;
+    color: $white;
+
+    @include tablet {
+      margin-top: initial;
+    }
+  }
+}

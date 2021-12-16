@@ -1,0 +1,27 @@
+.theme__container {
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include tablet {
+    padding: initial;
+    width: 100%;
+    max-width: #{$tabletContainer};
+  }
+
+  @include laptop {
+    max-width: #{$laptopContainer};
+  }
+
+  @include desktop {
+    max-width: #{$desktopContainer};
+  }
+}
+
+#root {
+  min-height: 100vh;
+  @include flex(column, unset, unset, unset);
+
+  main {
+    flex-grow: 1;
+  }
+}

@@ -1,9 +1,17 @@
 // CORE ----------------------------
 @import './core.scss';
 
+/** PAGES --------------------------
+  * TODO: When you create a new page, you MUST import the scss file here.
+	* NOTE: Always add the style related to a page inside the pages folder (src/pages/<page-name>/_<page-name>.style.scss)
+  */
+@import '../pages/Universities/universities.style';
+
 /** COMPONENTS ---------------------
   * TODO: When you create a new component, you MUST import the scss file here.
 	* NOTE: Always add the style related to a component inside the component folder (src/component/<component-name>/_<component-name>.style.scss)
   */
-@import '../components/Layouts/Header/_header.styles.scss';
-@import '../components/Layouts/Footer/_footer.style.scss';
+@import '../components/Layouts/Header/_header.styles';
+@import '../components/Layouts/Footer/_footer.style';
+@import '../components/Language/language-selector.styles';
+@import '../components/Modal/modal.style';

@@ -5,5 +5,8 @@ export const en = {
   universities: {
     title: 'Universities Page',
     pages: `Websites`,
+  },
+  notFound: {
+    title: '404 - Not Found'
   }
 };

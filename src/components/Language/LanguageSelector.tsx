@@ -24,11 +24,10 @@ export const LanguageSelector = observer(() => {
 	);
 
 	return (
-		<div data-testid="select-language">
-			<p className="language-selector__current">current language: {currentLanguage}</p>
+		<div className="language-selector" data-testid="select-language">
 			<Select
 				name="languageSelector"
-				className="language-selector__select"
+				className="language-selector__dropdown"
 				options={languageOptions}
 				defaultValue={languageOptions.find(({value}) => value === currentLanguage)}
 				onChange={(newValue) =>

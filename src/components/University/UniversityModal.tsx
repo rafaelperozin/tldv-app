@@ -15,15 +15,15 @@ export const UniversityModal = ({ open, onClose, info }: UniversityModalProps) =
   const { translate } = useTranslate();
 
   return (
-    <Modal open={open} onClose={() => onClose()}>
-      <h1>{name}</h1>
-      <p>{country}</p>
-      <p>{translate('universities.pages')}</p>
-      <ul>
+    <Modal open={open} onClose={() => onClose()} className="modal--university">
+      <h1 className="university__title">{name}</h1>
+      <p className="university__text">{country}</p>
+      <p className="university__text txt-bold">{translate('universities.pages')}</p>
+      <ul className="university__list">
         {web_pages.map((pageLink: string, index: number) => (
           // The KEY prop should be a uniqueId or the item ID, but to save time I'm using index for now.
-          <li key={index}>
-            <a href={pageLink} title={`${name}'s page`} target="_blank" rel="noreferrer">{pageLink}</a>
+          <li className="university__item" key={index}>
+            <a className="university__item-link" href={pageLink} title={`${name}'s page`} target="_blank" rel="noreferrer">{pageLink}</a>
           </li>
         ))}
       </ul>

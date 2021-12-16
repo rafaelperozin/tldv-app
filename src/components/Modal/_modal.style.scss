@@ -1,0 +1,41 @@
+.modal {
+  .modal__background {
+    @include absolute(0, 0, 0, 0);
+    z-index: 10;
+    background-color: $black-100;
+    opacity: .3;
+  }
+
+  .modal__box {
+    position: absolute;
+    @include absolute(50%, unset, unset, 50%);
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 85%;
+  }
+
+  .modal__close {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+
+    @include font-icon('fas', 'before', '\f00d', unset, unset, unset, unset) {
+      @extend .txt-s;
+      color: $black;
+    }
+  }
+
+  &--university {
+    width: 500px;
+    height: 240px
+  }
+}
