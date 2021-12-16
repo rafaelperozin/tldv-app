@@ -1,5 +1,8 @@
 export const pt = {
   home: {
-    title: 'Ola',
+    title: 'Olá',
+  },
+  universities: {
+    title: 'Página de Universidades',
   }
 };

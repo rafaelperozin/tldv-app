@@ -1,10 +1,12 @@
 import { applySnapshot, getSnapshot, Instance, types } from "mobx-state-tree";
 import store from "store";
 import { languageStore, LanguageStore } from './language.store';
+import { universitiesStore, UniversitiesStore } from './universities.store';
 
 export const RootStore = types
   .model("RootStore", {
     language: LanguageStore,
+    universities: UniversitiesStore,
   })
   .actions((self) => {
     let initialState = {};
@@ -22,6 +24,7 @@ export type RootStoreType = Instance<typeof RootStore>;
 
 export const createStore = () => RootStore.create({
   language: languageStore,
+  universities: universitiesStore,
 });
 
 export const rootStore = createStore();

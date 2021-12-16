@@ -5,10 +5,8 @@ export const Header = () => {
     <header>
       <div>Logo</div>
       <nav>
-        <ul>
-          <li>Home</li>
-          <li>Our Universities</li>
-        </ul>
+        <a href="/">Home</a>
+        <a href="/universities">Our Universities</a>
       </nav>
     </header>
   )
